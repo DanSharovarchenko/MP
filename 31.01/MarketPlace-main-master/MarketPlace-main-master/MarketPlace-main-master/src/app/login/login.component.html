@@ -1,0 +1,38 @@
+
+
+
+
+
+<div class="container">
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1 class="con">Авторизация</h1>
+		
+			<input class="email1 des" type="text" size="20" placeholder="Почта" maxlength="300"[(ngModel)]="mail">
+			<input class="password3 des"  type="text" size="20"minlength="10" placeholder="Пароль" maxlength="300"[(ngModel)]="password">
+   
+    
+   
+			<a href="#">Забыли пароль?</a>
+			<button>Войти</button>
+		</form>
+	</div>
+
+
+
+
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Войти</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Привет, Друг!</h1>
+				<p>Введи свои персональные данные и начинай путешествовать вместе с нами</p>
+				<button class="ghost" id="signUp" routerLink="/" (click)="login()">Зарегистрироваться</button>
+			</div>
+		</div>
+	</div>
+</div>
